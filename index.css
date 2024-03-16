@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald";
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+/*-----------------end of common styles----------------*/
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.navbar-link i {
+  color: white;
+  padding: 1rem;
+}
+
+.search-right {
+  position: absolute;
+  right: 0.6rem;
+}
+
+.sbs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 8rem;
+  left: 12%;
+  z-index: 50;
+  display: none;
+}
+
+.active.c1 {
+  display: block;
+}
+.active.c2 {
+  display: block;
+}
+.active.c3 {
+  display: block;
+}
+
+.sub-elements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.sub-elements i {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.sub-heading {
+  letter-spacing: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.e-mail-sub {
+  margin: 1rem 0;
+  padding: 0.7rem;
+  border: 0.3px solid gray;
+}
+
+.btn-sub {
+  margin: 0.1rem 0;
+  padding: 0.7rem 0;
+  background-color: rgb(223, 62, 62);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sub-container button {
+  width: 90%;
+  margin: 0 1rem;
+  padding: 0.7rem;
+  background-color: rgb(223, 62, 62);
+  border: none;
+  color: white;
+}
+
+/*-----------------end of navbar styles----------------*/
+.container {
+  margin: 0 auto;
+}
+.section-1 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.section-1-heading {
+  text-transform: uppercase;
+  padding-top: 3.5rem;
+  font-size: 3rem;
+}
+
+.header-text {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: large;
+  font-weight: 400;
+}
+
+.header-text span {
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: large;
+}
+
+.fashon-blog-container {
+  width: 100%;
+  background-image: url(jane.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 430px) {
+  .section-1-heading {
+    font-size: 35px;
+  }
+  .fashon-blog-container {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .fashon-title h1 {
+    display: none;
+  }
+}
+
+.fashon-title {
+  width: 100%;
+  text-align: left;
+  padding-top: 50%;
+  transform: translateY(-35%);
+  color: white;
+  padding-left: 2rem;
+}
+
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+.fashon-title .title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0;
+}
+
+.btn-blog {
+  padding: 0.5rem 1rem;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Oswald";
+  opacity: 0.5;
+}
+
+/*-----------------end of section1 styles----------------*/
+.section-2-container {
+  background-color: rgb(246, 243, 239);
+  padding: 2rem;
+}
+.section-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+@media (max-width: 430px) {
+  .section-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .image-comment {
+    height: 100px;
+  }
+}
+
+.title-section-2 {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 2.5rem 1.5rem;
+}
+.title-section-2 h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.title-section-2 h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  font-weight: 300;
+}
+
+.span {
+  color: gray;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.paragraph {
+  padding: 2rem 0;
+  text-align: justify;
+}
+
+.comment-section {
+  display: flex;
+  padding: 0.5rem;
+  position: relative;
+}
+.like {
+  padding: 0.5rem 0.9rem;
+  border: 0.2px solid rgb(187, 186, 186);
+  cursor: pointer;
+}
+.like i {
+  padding-right: 0.3rem;
+}
+
+hr {
+  border: 0.01px solid rgb(241, 240, 240);
+}
+
+.replies {
+  position: absolute;
+  right: 1rem;
+  padding: 0.5rem 0.9rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.replies span {
+  padding: 0.2rem 0.5rem;
+  background-color: white;
+  margin-left: 0.5rem;
+  color: black;
+}
+
+.comment-profile {
+  padding-top: 1.5rem;
+  display: flex;
+}
+
+.comment-profile-container {
+  display: none;
+}
+
+.comment-profile-container.active {
+  display: block;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.flex-column h4 {
+  padding-bottom: 1rem;
+}
+
+/*-----------------end of section2-right styles----------------*/
+
+.my-name-container {
+  background-color: black;
+}
+
+.my-name-description {
+  color: white;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.my-name-description h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+/*-----------------end of myname-container----------------*/
+
+.popular-title {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: black;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.popular-list {
+  background-color: white;
+}
+
+.popular-list li {
+  display: flex;
+  border-bottom: 1px solid rgb(204, 202, 202);
+  padding: 0 1rem;
+}
+
+.popular-list li:hover {
+  background-color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.post-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imge-post {
+  padding: 1rem 0;
+}
+
+.span-post {
+  padding: 0 1rem;
+  font-size: large;
+}
+
+.comments {
+  padding-left: 1rem;
+}
+
+/*-----------------end of popular-container----------------*/
+
+.advertise {
+  height: 200px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rem solid white;
+}
+
+/*-----------------end of advertise-container----------------*/
+.tags-list {
+  background-color: white;
+  padding: 1rem;
+}
+
+.tags-list p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: small;
+  align-items: center;
+}
+
+.span-tag {
+  margin: 0.5rem 0.5rem;
+  background-color: rgb(236, 235, 233);
+  padding: 0.3rem;
+}
+
+.fashion-tag {
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.5rem;
+}
+
+/*-----------------end of tags-container----------------*/
+
+.inspiration-imge-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5rem 1rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+/*-----------------end of inspiration-container----------------*/
+
+.social-tags {
+  background-color: white;
+}
+
+.social-tags i {
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+/*-----------------end of follow-container----------------*/
+.sub-container {
+  background-color: white;
+  height: 13rem;
+}
+
+.sub-text {
+  padding: 1rem;
+}
+
+.email {
+  width: 90%;
+  margin: 1rem;
+  padding: 0.7rem;
+  border: 0.3px solid gray;
+}
+
+.sub-container button {
+  width: 90%;
+  margin: 0 1rem;
+  padding: 0.7rem;
+  background-color: rgb(223, 62, 62);
+  border: none;
+  color: white;
+}
+
+/*-----------------end of sub-container----------------*/
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(86, 85, 85);
+  text-align: center;
+}
+
+footer:hover {
+  background-color: black;
+}
+.btn-footer {
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 20px 20px 15px 30px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  margin-top: 4rem;
+}
+
+.btn-footer:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-footer i {
+  font-size: 16px;
+  color: black;
+}
+
+.section5-icon i {
+  font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+footer p {
+  padding-bottom: 30px;
+  color: white;
+}
